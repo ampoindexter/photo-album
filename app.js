@@ -10,9 +10,11 @@ var logger = require('morgan');
 
 var app = express();
 
+var mongoUrl = process.env.MONGOLAB_URI || 'mongodb://localhost/picturesque'
 var mongoose = require('mongoose');
-
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/picturesque')
+mongoose.connect(mongoUrl, function(err) {
+  console.log(err || `Connected to MongoDB: ${mongoUrl}`);
+})
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
