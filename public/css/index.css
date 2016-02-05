@@ -1,0 +1,6 @@
+body:not(nav) {
+  background-image: url('http://www.henniker.org.uk/images/people/family/b4me/Katie2/album_cover.jpg');
+  background-size: 100%;
+  z-index: -50;
+  color: #ddd;
+}

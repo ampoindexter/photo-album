@@ -1,0 +1,16 @@
+extends layout
+
+block styles
+  link(rel="stylesheet", href="css/index.css")
+
+block content
+  .container
+    if user
+      h1 Hello, user.username!
+    else
+      h1 New users, please register for a free account!
+      h2 Already have an account? Login to create/view your albums!
+
+block scripts
+  script(src='/bower_components/firebase/firebase.js')
+  script(src="/js/index.js")

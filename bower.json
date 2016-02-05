@@ -1,0 +1,26 @@
+{
+  "name": "photo-album",
+  "authors": [
+    "Alicia Poindexter <alcampbel@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "bootstrap": "~3.3.6",
+    "firebase": "^2.4.0",
+    "bootswatch-dist": "yeti",
+    "sweetalert": "^1.1.3"
+  }
+}
