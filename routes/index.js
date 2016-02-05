@@ -10,7 +10,7 @@ router.get('/', authMiddleware, function(req, res, next) {
   console.log("User:", req.user);
   res.render('index', { 
     title: "Picturesque", 
-    user: req.user, 
+    user: req.user || '', 
     state: "home"});
 });
 
