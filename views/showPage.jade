@@ -1,0 +1,17 @@
+extends layout
+
+block styles
+
+block content
+  .container
+    h1 Album
+    .jumbotron
+      form(action='/albums/' + album._id + '/upload', method='post', enctype='multipart/form-data')
+        input(type="file", name='images', multiple=true)
+        button.btn.btn-success Submit
+      #images
+        each image in album.images
+          img(src= image.url)
+
+block scripts
+  script(src='/js/showPage.js')

@@ -22,10 +22,4 @@ router.get('/register', function(req, res, next) {
   res.render('userForm', {state: 'register', title: "Register"});
 });
 
-// go to add game form 
-// router.get('/addAlbum', authMiddleware, function(req, res, next) {
-//   console.log("User: ", req.user);
-//   res.render('addAlbum', { user: req.user});
-// });
-
 module.exports = router;
